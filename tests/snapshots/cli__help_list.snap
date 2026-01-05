@@ -1,0 +1,10 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+List all known attacks
+
+Usage: ector list
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,9 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Known Threats ===
+
+No threats registered yet.
+Use 'ector add' to register a new threat.

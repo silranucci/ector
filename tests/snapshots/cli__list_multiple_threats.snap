@@ -1,0 +1,23 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Known Threats ===
+
+• first-attack
+  Date:     2025-01-01
+  Packages: 0
+  Info:     First
+
+• second-attack
+  Date:     2025-01-02
+  Packages: 0
+  Info:     Second
+
+• third-attack
+  Date:     2025-01-03
+  Packages: 0
+  Info:     Third
+
+Total: 3 threats

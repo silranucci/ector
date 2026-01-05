@@ -1,0 +1,33 @@
+---
+source: tests/cli.rs
+expression: normalized_stdout
+---
+[INFO] Loading all known threats...
+[SUCCESS] Loaded 0 threats
+
+
+=== Starting Security Scan ===
+Directory: <PROJECT_DIR>/tests/fixtures/effect-app
+
+
+=== Starting Security Scan ===
+Directory: <PROJECT_DIR>/tests/fixtures/effect-app
+
+[SCAN] Checking package.json...
+  [OK] No issues found
+[SCAN] Checking package-lock.json...
+  [OK] No issues found
+
+=== Scan Summary ===
+  Packages checked: <N>
+  Files scanned: 0
+
+✓ No security issues found
+
+=== Final Report ===
+
+Packages checked: <N>
+Files scanned:    0
+
+✓ No issues found!
+Your project appears to be safe from known supply chain threats.

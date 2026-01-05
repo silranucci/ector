@@ -1,3 +1,5 @@
+use std::path::PathBuf;
+
 use anyhow::Result;
 use clap::{Parser, Subcommand};
 
@@ -55,6 +57,25 @@ pub enum Commands {
         interactive: bool,
     },
 
+    /// Check for compromised packages
+    Check {
+        /// Check all known attacks
+        #[arg(long, conflicts_with = "attack")]
+        all: bool,
+
+        /// Check specific attack by name
+        #[arg(short = 'a', long, conflicts_with = "all")]
+        attack: Option<String>,
+
+        /// Directory to scan
+        #[arg(short, long, default_value = ".")]
+        directory: PathBuf,
+
+        /// Interactive mode: select attack from list
+        #[arg(short, long)]
+        interactive: bool,
+    },
+
     /// List all known attacks
     List,
 }
@@ -88,6 +109,13 @@ impl Cli {
             ),
 
             Commands::List => commands::list::handle(store),
+
+            Commands::Check {
+                all,
+                attack,
+                directory,
+                interactive,
+            } => commands::check::handle(store, all, attack, &directory, interactive),
         }
     }
 }

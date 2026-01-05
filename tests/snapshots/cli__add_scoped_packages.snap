@@ -1,0 +1,28 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Add New Threat ===
+
+[INFO] Non-interactive mode (using provided args)
+
+[INFO] Processing 2 package(s)...
+  ✓ Added: @babel/core@7.23.0
+  ✓ Added: @types/node@20.0.0
+
+
+=== Threat Summary ===
+
+Name:        scoped-package-attack
+Date:        2025-01-01
+Packages:    2
+Description: Test with scoped package
+
+Packages:
+  • @babel/core@7.23.0
+  • @types/node@20.0.0
+
+
+✓ Threat saved successfully!
+File: scoped-package-attack.ect

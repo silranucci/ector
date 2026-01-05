@@ -1,4 +1,7 @@
 pub mod cli;
 mod core;
-mod json;
+mod scanner;
 pub mod store;
+mod util;
+
+use util::json;

@@ -1,0 +1,25 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Add New Threat ===
+
+[INFO] Non-interactive mode (using provided args)
+
+[INFO] Adding 1 signature(s)...
+
+
+=== Threat Summary ===
+
+Name:        signature-test
+Date:        2025-01-01
+Packages:    0
+Description: Test with signature
+
+Signatures:
+  • eval(Buffer.from(
+
+
+✓ Threat saved successfully!
+File: signature-test.ect

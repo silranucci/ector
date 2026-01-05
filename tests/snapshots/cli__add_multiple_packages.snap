@@ -1,0 +1,30 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Add New Threat ===
+
+[INFO] Non-interactive mode (using provided args)
+
+[INFO] Processing 3 package(s)...
+  ✓ Added: lodash@4.17.20
+  ✓ Added: express@4.18.0
+  ✓ Added: @babel/core@7.23.0
+
+
+=== Threat Summary ===
+
+Name:        multi-package-attack
+Date:        2025-01-01
+Packages:    3
+Description: Test with multiple packages
+
+Packages:
+  • @babel/core@7.23.0
+  • express@4.18.0
+  • lodash@4.17.20
+
+
+✓ Threat saved successfully!
+File: multi-package-attack.ect

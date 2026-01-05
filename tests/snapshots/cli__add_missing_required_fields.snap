@@ -1,0 +1,13 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+=== STDOUT ===
+
+=== Add New Threat ===
+
+[INFO] Non-interactive mode (using provided args)
+
+
+=== STDERR ===
+Error: --name is required
