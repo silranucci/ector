@@ -1,0 +1,50 @@
+---
+source: tests/cli.rs
+expression: normalized_stdout
+---
+[INFO] Loading all known threats...
+[SUCCESS] Loaded 1 threats
+  • lodash-compromise (1 packages)
+
+
+=== Starting Security Scan ===
+Directory: <PROJECT_DIR>/tests/fixtures/effect-app
+
+
+=== Starting Security Scan ===
+Directory: <PROJECT_DIR>/tests/fixtures/effect-app
+
+[SCAN] Checking package.json...
+  [OK] No issues found
+[SCAN] Checking package-lock.json...
+  [COMPROMISED] lodash@4.17.21
+[SCAN] Scanning source files for malicious code...
+  [INFO] Found 37 files to scan
+  [OK] No malicious code detected
+
+=== Scan Summary ===
+  Packages checked: <N>
+  Files scanned: <N>
+
+✗ 1 security issues found:
+  - 1 compromised packages
+  - 0 malicious code patterns
+  - 0 payload files
+
+=== Final Report ===
+
+Packages checked: <N>
+Files scanned: <N>
+
+⚠ 1 CRITICAL ISSUES FOUND
+
+Compromised Packages:
+
+  • lodash@4.17.21 in package-lock.json
+    Threat: lodash-compromise
+
+Recommended Actions:
+  1. Remove or update compromised packages immediately
+  2. Review your dependency tree for transitive dependencies
+  3. Check your package-lock.json or yarn.lock for version locks
+  4. Consider using npm audit or yarn audit for additional checks

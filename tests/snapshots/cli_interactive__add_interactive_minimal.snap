@@ -1,0 +1,8 @@
+---
+source: tests/cli_interactive.rs
+expression: normalized
+---
+
+=== Add New Threat ===
+
+[INFO] Interactive mode

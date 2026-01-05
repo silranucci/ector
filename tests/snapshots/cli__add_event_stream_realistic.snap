@@ -1,0 +1,38 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Add New Threat ===
+
+[INFO] Non-interactive mode (using provided args)
+
+[INFO] Processing 2 package(s)...
+  ✓ Added: event-stream@3.3.6
+  ✓ Added: flatmap-stream@0.1.1
+[INFO] Adding 2 signature(s)...
+[INFO] Adding 1 payload file(s)...
+
+
+=== Threat Summary ===
+
+Name:        event-stream-compromise
+Date:        2018-11-26
+Packages:    2
+CVE:         CVE-2018-3728
+Description: Malicious code injection in event-stream via flatmap-stream
+
+Packages:
+  • event-stream@3.3.6
+  • flatmap-stream@0.1.1
+
+Signatures:
+  • eval(Buffer.from(
+  • module.exports = function()
+
+Payload Files:
+  • flatmap-stream/index.js
+
+
+✓ Threat saved successfully!
+File: event-stream-compromise.ect

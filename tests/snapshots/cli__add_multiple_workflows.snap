@@ -1,0 +1,27 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+
+=== Add New Threat ===
+
+[INFO] Non-interactive mode (using provided args)
+
+[INFO] Adding 3 workflow path(s)...
+
+
+=== Threat Summary ===
+
+Name:        multi-workflow
+Date:        2025-01-01
+Packages:    0
+Description: Multiple workflows
+
+Workflow Paths:
+  • .github/workflows/ci.yml
+  • .github/workflows/publish.yml
+  • .github/workflows/release.yml
+
+
+✓ Threat saved successfully!
+File: multi-workflow.ect

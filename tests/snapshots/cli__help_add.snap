@@ -1,0 +1,19 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+Add a new attack to the database
+
+Usage: ector add [OPTIONS]
+
+Options:
+      --name <NAME>                Attack name
+      --date <DATE>                Discovery date (YYYY-MM-DD)
+      --description <DESCRIPTION>  Description
+      --cve <CVE>                  CVE number (optional)
+  -p, --package <PACKAGES>         Compromised packages (package@version, can be specified multiple times)
+  -s, --signature <SIGNATURES>     Code signatures (can be specified multiple times)
+  -f, --payload <PAYLOAD_FILES>    Payload files (can be specified multiple times)
+  -w, --workflow <WORKFLOW_PATHS>  Workflow paths (can be specified multiple times)
+  -i, --interactive                Interactive mode (prompt for all fields)
+  -h, --help                       Print help

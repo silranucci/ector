@@ -1,0 +1,37 @@
+---
+source: tests/cli.rs
+expression: yarn_normalized
+---
+[INFO] Loading all known threats...
+[SUCCESS] Loaded 1 threats
+  • effect-platform-compromise (1 packages)
+
+
+=== Starting Security Scan ===
+Directory: <PROJECT_DIR>/tests/fixtures/effect-app-yarn
+
+
+=== Starting Security Scan ===
+Directory: <PROJECT_DIR>/tests/fixtures/effect-app-yarn
+
+[SCAN] Checking package.json...
+  [OK] No issues found
+[SCAN] Checking yarn.lock...
+  [OK] No issues found
+[SCAN] Scanning source files for malicious code...
+  [INFO] Found 37 files to scan
+  [OK] No malicious code detected
+
+=== Scan Summary ===
+  Packages checked: <N>
+  Files scanned: <N>
+
+✓ No security issues found
+
+=== Final Report ===
+
+Packages checked: <N>
+Files scanned: <N>
+
+✓ No issues found!
+Your project appears to be safe from known supply chain threats.

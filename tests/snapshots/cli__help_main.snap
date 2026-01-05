@@ -1,0 +1,17 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+NPM Supply Chain Security Scanner
+
+Usage: ector <COMMAND>
+
+Commands:
+  add    Add a new attack to the database
+  check  Check for compromised packages
+  list   List all known attacks
+  help   Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version

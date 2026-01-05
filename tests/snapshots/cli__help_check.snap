@@ -1,0 +1,14 @@
+---
+source: tests/cli.rs
+expression: normalized
+---
+Check for compromised packages
+
+Usage: ector check [OPTIONS]
+
+Options:
+      --all                    Check all known attacks
+  -a, --attack <ATTACK>        Check specific attack by name
+  -d, --directory <DIRECTORY>  Directory to scan [default: .]
+  -i, --interactive            Interactive mode: select attack from list
+  -h, --help                   Print help
